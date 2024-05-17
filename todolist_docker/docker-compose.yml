@@ -15,11 +15,11 @@ services:
   web:
     #build: .
     image: ghcr.io/songjaewon7361/prjdocker-web:latest
-    command: python manage.py runserver 0.0.0.0:8080
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/app
     ports:
-      - "8080:8080"
+      - "8000:8000"
     depends_on:
       - db
     environment:
